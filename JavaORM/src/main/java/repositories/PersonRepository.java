@@ -7,7 +7,5 @@ public class PersonRepository extends CSVOrm<Person> {
     public PersonRepository(String filePath) {
         super(filePath, Person.class);
     }
-
-    // Métodos específicos de Persona
 }
 
