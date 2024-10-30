@@ -9,6 +9,9 @@ The objective of this project is to create in Java an ORM that connects to a CSV
 ## Technologies Used
 
 - Java
+- CSV
+- Java
+
 
 ## Setup
 
@@ -18,15 +21,24 @@ The objective of this project is to create in Java an ORM that connects to a CSV
    cd JavaORM/auth_service
 
    ```
+   
 ## Project Structure
 
-- `app/`: Main application package
-  - `models/`: Defines data models
-   - `pay.py`
-   - `tenant.py`
-  - `repositories/`: Implements data access logic
-   - `pay_repository.py`
-   - `tenant_repository.py`
+This project follows a file structure organized to facilitate the management of configurations, models, repositories, and utilities. Each folder and its purpose are described below:
+
+### Description of Folders
+
+- **`src/`**: Main folder containing all the source code for the project.
+- **`main/`**: Folder containing the main code of the project.
+  - **`java/`**: Root directory for Java code.
+    - **`config/`**: General project settings, such as global parameters and database settings.
+    - **`model/`**: Model classes that represent the system entities `Person` and `City`.
+    - **`repository/`**: Repository classes for handling CRUD operations on entities.
+    - **`utils/`**: Utility classes, such as CSV readers and other helper tools.
+    - **`orm/`**: ORM classes that manage the mapping of entities to the database.
+  - **`resources/`**: Resource files as CSV files.
+- **`test/`**: Contains unit tests that verify the functionality of the project.
+
 ## Contribution
 Please make corrections in this section
 
