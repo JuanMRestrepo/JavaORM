@@ -6,12 +6,18 @@ This project is about make my own java ORM or JPA
 
 The objective of this project is to create in Java an ORM that connects to a CSV file
 
-## Technologies Used
+## technologies and libraries Used
 
-- Java
-- CSV
-- Java
-
+### technologies
+- Java SE
+- Java Reflection API
+- Java I/O 
+- Java Collections Framework
+- Maven
+- JUnit
+### libraries
+- Apache Commons CSV
+- SLF4J / Log4j
 
 ## Setup
 
@@ -40,6 +46,7 @@ This project follows a file structure organized to facilitate the management of 
 - **`test/`**: Contains unit tests that verify the functionality of the project.
 
 ## Contribution
+
 Please make corrections in this section
 
 Thank you for your interest in this project!!!
