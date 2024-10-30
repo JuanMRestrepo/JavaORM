@@ -13,16 +13,18 @@ public class App {
         CityRepository cityRepo = new CityRepository(Config.CITY_CSV_PATH);
         
         //create person
-        Person newPerson = new Person(1, "Juan", 30);
-        personRepo.save(newPerson);
+        Person newPerson1 = new Person(1, "Juan", 30);
+        Person newPerson2 = new Person(2, "Maria", 17);
+        personRepo.save(newPerson1);
+        personRepo.save(newPerson2);
 
         // Get all persons
         personRepo.getAll().forEach(System.out::println);
 
         // Update person 
-        newPerson.setName("Juan Actualizado");
-        personRepo.update(1, newPerson);
-        // find person by id
+        newPerson1.setName("Juan Actualizado");
+        personRepo.update(1, newPerson1);
+        // find person by id after update 
         Person person = personRepo.findById(1);
         System.out.println("Encontrado: " + person);
 
@@ -30,15 +32,17 @@ public class App {
         personRepo.delete(1);
 
         //create city
-        City newCity = new City(1, "Armenia", "Risaralda", "Colombia");
-        cityRepo.save(newCity);
+        City newCity1 = new City(1, "Armenia", "Risaralda", "Colombia");
+        cityRepo.save(newCity1);
+        City newCity2 = new City(2, "Pereira", "Risaralda", "Colombia");
+        cityRepo.save(newCity2);
 
         // Get all cities
         cityRepo.getAll().forEach(System.out::println);
 
         // Update city 
-        newCity.setState("Quindio");;
-        cityRepo.update(1, newCity);
+        newCity1.setState("Quindio");
+        cityRepo.update(1, newCity1);
         // find city by id
         City city = cityRepo.findById(1);
         System.out.println("Encontrado: " + city);

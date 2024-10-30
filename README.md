@@ -1,6 +1,6 @@
 # JavaORM
 
-This project is about make my own java ORM or JPA
+This project make own java ORM
 
 ## Project Description
 
